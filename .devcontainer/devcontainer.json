@@ -1,0 +1,9 @@
+{
+    "name" : "fms-master-test",
+    "build" : {
+        "dockerfile": "Dockerfile",
+        "args": {"VARIANT": "focal"}
+    },
+
+    //"remoteUser": "vscode"
+}
