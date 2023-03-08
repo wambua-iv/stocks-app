@@ -1,5 +1,5 @@
-ARG VARIANT=ubuntu-20.04
-FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
+ARG VARIANT="18-bullseye"
+FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 
 # Installing additional OS Packages
 RUN apt-get update \
@@ -17,4 +17,3 @@ RUN apt-get update \
     && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh \
     &&   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
     
-RUN nvm install lts/hydrogen
