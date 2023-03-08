@@ -1,5 +1,4 @@
-ARG VARIANT="18-bullseye"
-FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
+FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:18-bullseye
 
 # Installing additional OS Packages
 RUN apt-get update \
