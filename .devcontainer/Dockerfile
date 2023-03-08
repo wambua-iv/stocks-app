@@ -15,6 +15,6 @@ RUN apt-get update \
     # set up locale
     &&    locale-gen en_US.UTF-8 && fc-cache -vf \ 
     && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh \
-    &&   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash \
+    &&   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh  \
     source ~/.bashrc \
     && nvm install lts/hydrogen
