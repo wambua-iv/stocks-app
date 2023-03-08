@@ -17,5 +17,4 @@ RUN apt-get update \
     && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh \
     &&   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
     
-RUN .~/.bashrc \
-    && nvm install lts/hydrogen
+RUN nvm install lts/hydrogen
